@@ -1,0 +1,9 @@
+{% extends 'base.html' %}
+
+{% block contennt %}
+    <h2 style="margin: 10px;">Ro'yhatdan o'tish</h2>
+    <form method="post" style="margin: 10px;">{% csrf_token %}
+        {{ form.as_p }}
+    <button type="submit" style="margin: 10px;">Ro'yhatdan o'tish</button>
+    </form>
+{% endblock contennt %}
